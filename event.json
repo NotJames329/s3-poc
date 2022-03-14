@@ -1,0 +1,53 @@
+{
+    "EventName": "s3:ObjectCreated:Put",
+    "Key": "hello/try2.txt",
+    "Records": [
+        {
+            "eventVersion": "2.0",
+            "eventSource": "minio:s3",
+            "awsRegion": "",
+            "eventTime": "2022-03-09T13:19:17.308Z",
+            "eventName": "s3:ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "admin"
+            },
+            "requestParameters": {
+                "principalId": "admin",
+                "region": "",
+                "sourceIPAddress": "172.18.0.3"
+            },
+            "responseElements": {
+                "content-length": "0",
+                "x-amz-request-id": "16DAB8F09A8D6CF0",
+                "x-minio-deployment-id": "198d137f-a911-43ee-872d-860f71c1eb3b",
+                "x-minio-origin-endpoint": "http://172.17.0.2:9000"
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "Config",
+                "bucket": {
+                    "name": "hello",
+                    "ownerIdentity": {
+                        "principalId": "admin"
+                    },
+                    "arn": "arn:aws:s3:::hello"
+                },
+                "object": {
+                    "key": "try2.txt",
+                    "size": 23,
+                    "eTag": "eb869733dc109d0d90db5585895fd435",
+                    "contentType": "binary/octet-stream",
+                    "userMetadata": {
+                        "content-type": "binary/octet-stream"
+                    },
+                    "sequencer": "16DAB8F09C1D70FD"
+                }
+            },
+            "source": {
+                "host": "172.18.0.3",
+                "port": "",
+                "userAgent": "Boto3/1.21.15 Python/3.9.10 Linux/5.10.60.1-microsoft-standard-WSL2 Botocore/1.24.15 Resource"
+            }
+        }
+    ]
+}
